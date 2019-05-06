@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link href="css/menu.css" rel="stylesheet" />
+    <script src="script/student.js"></script>
+    <body ng-app="myApp">
+        <nav class="{{active}}">
+
+            <!-- When a link in the menu is clicked, we set the active variable -->
+
+            <a href="#home" class="home" ng-click="active = 'home'">Home</a>
+
+            <a href="#student" class="student" ng-click="active = 'student'">Student</a>
+        </nav>
+        <div ng-view style="align-content: center"></div>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
